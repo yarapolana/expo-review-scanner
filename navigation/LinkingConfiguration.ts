@@ -9,6 +9,7 @@ export default {
           TabOne: {
             screens: {
               TabOneScreen: 'one',
+              TabOneNested: 'oneNested',
             },
           },
           TabTwo: {

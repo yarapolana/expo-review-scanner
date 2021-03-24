@@ -5,11 +5,16 @@ export type RootStackParamList = {
 
 export type BottomTabParamList = {
   TabOne: undefined;
-  TabTwo: undefined;
+  TabTwo: {
+    scannedData: string
+  };
 };
 
 export type TabOneParamList = {
   TabOneScreen: undefined;
+  TabOneNestedScreen: {
+    scannedData: string
+  };
 };
 
 export type TabTwoParamList = {

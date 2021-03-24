@@ -6,6 +6,7 @@ import * as React from 'react';
 import Colors from '../constants/Colors';
 import useColorScheme from '../hooks/useColorScheme';
 import TabOneScreen from '../screens/TabOneScreen';
+import TabOneNestedScreen from '../screens/TabOneNestedScreen';
 import TabTwoScreen from '../screens/TabTwoScreen';
 import { BottomTabParamList, TabOneParamList, TabTwoParamList } from '../types';
 
@@ -53,6 +54,11 @@ function TabOneNavigator() {
         name="TabOneScreen"
         component={TabOneScreen}
         options={{ headerTitle: 'Tab One Title' }}
+      />
+      <TabOneStack.Screen
+        name="TabOneNestedScreen"
+        component={TabOneNestedScreen}
+        options={{ headerTitle: 'Tab One Nested Title' }}
       />
     </TabOneStack.Navigator>
   );

@@ -1,20 +1,18 @@
+import { useRoute } from '@react-navigation/core';
 import * as React from 'react';
 import { StyleSheet } from 'react-native';
-import { useRoute } from '@react-navigation/core';
 
-import EditScreenInfo from '../components/EditScreenInfo';
 import { Text, View } from '../components/Themed';
 
-export default function TabTwoScreen() {
+export default function TabOneNestedScreen() {
   const {params} = useRoute<any>()
   
-  console.log('Scanned Data', params ?? 'nothing') // Between tabbar navigation, params does nothing
+  console.log('Scanned Nested Data', params ?? 'works') // Between Nested works
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>{'route.params?.scannedData'}</Text>
+      <Text style={styles.title}>{'TAB ONE NESTED'}</Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <EditScreenInfo path="/screens/TabTwoScreen.tsx" />
     </View>
   );
 }
