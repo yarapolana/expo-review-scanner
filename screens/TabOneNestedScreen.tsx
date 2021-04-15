@@ -5,8 +5,8 @@ import { StyleSheet } from 'react-native';
 import { Text, View } from '../components/Themed';
 
 export default function TabOneNestedScreen() {
-  const {params} = useRoute<any>()
-  
+  const { params } = useRoute<any>()
+
   console.log('Scanned Nested Data', params ?? 'works') // Between Nested works
 
   return (
